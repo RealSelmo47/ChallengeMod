@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "challengemods",
+  "version": "${version}",
+  "name": "Challenge Mods",
+  "description": "Challenge-Modi wie Red Light Green Light, Block-Randomizer, Chunk-Tausch und Welt-Remix. Auswahl direkt beim Welt-Erstellen.",
+  "authors": ["du"],
+  "environment": "*",
+  "entrypoints": {
+    "main": ["com.challengemods.ChallengeMods"],
+    "client": ["com.challengemods.client.ChallengeModsClient"]
+  },
+  "mixins": ["challengemods.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": "~1.21.1",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
